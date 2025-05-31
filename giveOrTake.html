@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galileo Design</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <!-- 상단: ← + 마이페이지 -->
+      <!-- 상단: ← + 마이페이지 (통일 스타일 적용) -->
+<div class="flex items-center justify-between px-4 pt-4 pb-2">
+  <a href="index.html" class="text-[#151711] text-[15px] font-medium leading-normal tracking-[-0.015em]">
+    ←
+  </a>
+  <a href="my.html" class="text-[#151711] text-[15px] font-medium leading-normal tracking-[-0.015em]">
+    마이페이지
+  </a>
+</div>
+
+      <!-- 제목 -->
+      <h2 class="text-[#151711] tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">
+        현재 쌓인 토큰 &lt;000&gt;
+      </h2>
+
+      <!-- 버튼 영역 -->
+      <div class="flex justify-center">
+        <div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#92e236] text-[#151711] text-base font-bold leading-normal tracking-[0.015em] w-full"
+          >
+            <span class="truncate">받기</span>
+          </button>
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#f2f4f0] text-[#151711] text-base font-bold leading-normal tracking-[0.015em] w-full"
+          >
+            <span class="truncate">넘기기</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 랭킹 링크 -->
+      <p class="text-[#768764] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">
+        <a href="ranking.html" class="underline hover:text-[#92e236] transition">랭킹 보러가기</a>
+      </p>
+
+      <div class="h-5 bg-white"></div>
+
+      <!-- 고정 광고 배너 -->
+      <div class="fixed bottom-0 left-0 w-full bg-[#f7f9f4] border-t border-[#e1e5dc] z-50">
+        <div class="max-w-[480px] mx-auto px-4 py-3 text-center">
+          <p class="text-sm text-[#4b5242] font-medium">📢 광고</p>
+          <p class="mt-1 text-base text-[#151711] leading-snug">
+            지금 참여하고 <span class="text-[#92e236] font-bold">NFT 보상</span>을 받아보세요!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
